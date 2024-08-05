@@ -1,0 +1,30 @@
+body {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 0%;
+    padding: 0%;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    margin-top: 320px;
+}
+
+#searchfield {
+    width: 500px;
+    height: 25px;
+
+}
+
+.buttons {
+ background-color: aquamarine;
+ display: flex;
+ height: 100px;
+ flex-direction: row;
+ align-items: flex-start;
+ row-gap: 20px;
+}
