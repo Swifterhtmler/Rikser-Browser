@@ -32,10 +32,10 @@ body {
   box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.35) ;
 }
 
+
 .buttons {
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-row-gap: 80px;
-background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  column-gap: 250px; 
 }
+
