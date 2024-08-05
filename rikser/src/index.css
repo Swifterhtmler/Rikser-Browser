@@ -24,7 +24,7 @@ body {
   width: 500px;
   height: 25px;
   border-radius: 8px;
-  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 5px 5px 0 rgba(141, 156, 164, 0.35);
 
 }
 
@@ -36,6 +36,32 @@ body {
 .buttons {
   display: flex;
   flex-direction: row;
-  column-gap: 250px; 
+  background-color: rgba(94, 121, 141, 0.5);
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 0 rgba(141, 156, 164, 0.35);
 }
 
+.buttons:hover {
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.35) ;
+}
+
+
+#back {
+  margin-right: 40px;
+}
+
+#forward {
+  margin-right: 80px;
+}
+
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
