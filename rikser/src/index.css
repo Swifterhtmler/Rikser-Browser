@@ -13,7 +13,7 @@ body {
   background-color: aquamarine;
 }
 
-.container {
+#searchContainer {
   display: grid;
   place-items: center;
   justify-content: center;
@@ -33,10 +33,9 @@ body {
 }
 
 .buttons {
-background-color: aquamarine;
 display: flex;
-height: 100px;
 flex-direction: row;
 align-items: flex-start;
-row-gap: 20px;
+row-gap: 80px;
+background-color: aqua;
 }
