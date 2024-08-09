@@ -10,15 +10,10 @@ body {
   margin: auto;
   max-width: 38rem;
   padding: 2rem;
-  background-color: aquamarine;
+  background-color: rgb(220, 220, 220);
 }
 
-#searchContainer {
-  display: grid;
-  place-items: center;
-  justify-content: center;
-  margin-top: 320px;
-}
+
 
 #searchfield {
   width: 500px;
@@ -58,6 +53,10 @@ body {
   margin-right: 80px;
 }
 
+#res {
+  margin-left: 20px;
+}
+
 
 button {
   background: none;
@@ -65,3 +64,5 @@ button {
   outline: none;
   box-shadow: none;
 }
+
+

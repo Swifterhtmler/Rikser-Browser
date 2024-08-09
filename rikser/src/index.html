@@ -8,16 +8,20 @@
   <body>
 
     <div class="buttons">
-      <div class="flex-items"><button id="back">Back</button></div> 
-      <div class="flex-items"><button id="forward">Forward</button></div>
-      <div class="flex-items"><button id="refresh">Refresh</button></div>
+      <div class="flex-items"><button onclick="backapage()" id="back"><img src="back.webp" width="50px" height="50px"></button></div> 
+      <div class="flex-items"><button onclick="forwardapage()" id="forward"><img src="forward.png" width="50px" height="50px"></button></div>
+      <div id="searchContainer">
+        <input id="searchfield" type="text">
+       </div>
+       <div class="flex-items"><button onclick="refresh()" id="refresh">Refresh</button></div>
     </div>
 
+    <br>
 
-   <div id="searchContainer">
-    <input id="searchfield" type="text">
-   </div>
-
+   <div id="iframe-container">
+    <iframe id="browser-frame" src="" width="1840px"
+    height="1820px"></iframe>
+</div>
 
    <script src="script.js"></script>
   </body>
