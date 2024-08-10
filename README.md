@@ -1,2 +1,2 @@
 # Rikser-Browser
-Repo for my &lt;insert engine>-based browser
+Repo for my electron-based browser
