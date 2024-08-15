@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rikser</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+
+    <div class="buttons">
+      <div class="flex-items"><button onclick="backapage()" id="back"><img src="back.webp" width="50px" height="50px" alt="backward arrow"></button></div> 
+      <div class="flex-items"><button onclick="forwardapage()" id="forward"><img src="forward.png" width="50px" height="50px" alt="forward arrow"></button></div>
+      <div id="searchContainer">
+        <div id="sameline">
+       <input  id="searchfield" type="text" placeholder="Enter URL">
+       <button id="loadButton">Go</button>
+      </div>
+       </div>
+       <div class="flex-items"><button onclick="refresh()" id="refresh"><img src="refresh.png" alt="refresh logo" width="60px" height="60px"></button></div>
+    </div>
+
+
+
+    <br>
+  
+      <webview id="webview" style="width:1800px; height: 1100px;" src=""></webview>
+
+    <script>
+     
+      const webview = document.getElementById('webview');
+const searchfield = document.getElementById('searchfield');
+const loadButton = document.getElementById('loadButton');
+
+const backButton = document.getElementById('back');
+const forwardButton = document.getElementById('forward');
+const resButton = document.getElementById('refresh');
+
+let historyStack = [];
+let historyIndex = -1;
+
+function loadPage(url) {
+    if (url !== '') {
+        webview.src = url;
+
+        // Update history stack
+        if (historyIndex === -1 || historyStack[historyIndex] !== url) {
+            historyStack = historyStack.slice(0, historyIndex + 1); // Truncate forward history if needed
+            historyStack.push(url);
+            historyIndex++;
+        }
+    }
+}
+
+loadButton.addEventListener('click', () => {
+    const url = searchfield.value; // Get the value from the input field
+    loadPage(url); // Call loadPage with the input value
+});
+
+searchfield.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        const url = searchfield.value; // Get the value from the input field
+        loadPage(url); // Call loadPage with the input value
+    }
+});
+
+backButton.addEventListener('click', () => {
+    if (historyIndex > 0) {
+        historyIndex--;
+        webview.src = historyStack[historyIndex];
+    }
+});
+
+forwardButton.addEventListener('click', () => {
+    if (historyIndex < historyStack.length - 1) {
+        historyIndex++;
+        webview.src = historyStack[historyIndex];
+    }
+});
+
+resButton.addEventListener('click', () => {
+    webview.reload();
+});
+
+
+
+    </script>
+
+
+   <script src="script.js"></script>
+  </body>
+</html>

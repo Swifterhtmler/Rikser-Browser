@@ -1,0 +1,83 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    height: auto;
+  
+    padding: 0%;
+    margin: auto;
+    max-width: 38rem;
+    padding: 2rem;
+    background-color: rgb(220, 220, 220);
+  }
+  
+  
+  
+  #searchfield {
+    width: 500px;
+    height: 25px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 0 rgba(141, 156, 164, 0.35);
+    margin-top: 10px;
+  
+  }
+  
+  #searchfield:hover {
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.35) ;
+  }
+  
+  
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(94, 121, 141, 0.5);
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 0 rgba(141, 156, 164, 0.35);
+  }
+  
+  .buttons:hover {
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.35) ;
+  }
+  
+  
+  #back {
+    margin-right: 40px;
+  }
+  
+  #forward {
+    margin-right: 80px;
+  }
+  
+  #res {
+    margin-left: 20px;
+  }
+  
+  
+  button {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  
+  
+  #sameline {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  #loadButton {
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: gray;
+    padding: 2px;
+    border-radius: 5px;
+  }
+  
