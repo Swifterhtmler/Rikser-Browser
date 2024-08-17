@@ -105,6 +105,23 @@ const createWindow = () => {
   // DevTools will be hidden initially.
 };
 
+
+session.defaultSession.webRequest.onBeforeSendHeaders((details, callback) => {
+    details.requestHeaders['DNT'] = '1'; // Add Do Not Track header
+    callback({ cancel: false, requestHeaders: details.requestHeaders });
+});
+
+session.defaultSession.cookies.set({
+    url: 'http://your.url', // your site or domain
+    name: 'SameSite',
+    value: 'Strict',
+    sameSite: 'strict'
+});
+
+session.defaultSession.cookies.remove('http://your.url', 'name_of_cookie_to_remove');
+
+
+
 app.whenReady().then(() => {
   createWindow();
 
@@ -122,6 +139,10 @@ app.whenReady().then(() => {
   });
 });
 
+app.on('before-quit', () => {
+    session.defaultSession.clearStorageData({ storages: ['cookies'] });
+});
+
 // Quit when all windows are closed, except on macOS
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
@@ -133,3 +154,5 @@ app.on('will-quit', () => {
   // Unregister all shortcuts when the app is about to quit
   globalShortcut.unregisterAll();
 });
+
+
