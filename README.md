@@ -6,11 +6,16 @@ Rikser is simple, intuitive and mimimalistic retro style browser, it is made usi
 
 ---
 
-You can install it by > going in to releases > downloading the newest release for your system > and proseeding as the instructions tell you. 
-
 ⚠️ Rikser browser is currently MacOS and Debian only but release for windows is coming 🔜
 
 --- 
+
+## Installation
+
+You can install it by > going in to releases > downloading the newest release for your system > and proseeding as the instructions tell you. 
+
+MacOS catalina and newer versions don't let Rikser browser to be insalled trough .dmg file.
+
 
 
 
