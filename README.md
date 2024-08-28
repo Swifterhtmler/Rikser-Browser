@@ -4,9 +4,7 @@
 Rikser is simple, intuitive and mimimalistic retro style browser, it is made using electron (electron forge etc).
 
 
----
 
-⚠️ Rikser browser is currently MacOS and Debian only but release for windows is coming 🔜
 
 --- 
 
