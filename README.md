@@ -44,7 +44,7 @@ Rikser browser is currently under deveploment
 
 ## FAQ
 
-#### Can you develope in this browser ?
+#### Does Rikser Browser include dev tools ?
 
    - Yes Rikser Browser includes chrome developer tools and you can view and edit webpages dynamically with them.
 
@@ -52,5 +52,9 @@ Rikser browser is currently under deveploment
 
    - I don't know it's as simple as browsers can get and the source code is easily editable.
 
+#### What makes this browser unique ?
+
+   - Currently Rikser Browser only supports one tab view making it ideal for testing enviroments where multipletabs are not permitted.
+     The multitabview is under development releasing 2025.
    
 
