@@ -1,7 +1,7 @@
 
 # Rikser Browser
 
-Rikser is simple, intuitive and mimimalistic retro style browser, it is made using electron (electron forge etc).
+Rikser is simple, intuitive and minimalistic retro style browser, it is made using electron (electron forge etc).
 
 
 
