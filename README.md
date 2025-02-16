@@ -16,7 +16,7 @@ MacOS catalina and newer versions don't let Rikser browser to be insalled trough
 
 For MacOS Catalina and later use ```Git Clone url``` and then run ```npm run package``` and to make executable .dmg file use ```npm run make```
 
-And then move the app to appliaction directory.
+And then move the app to appliaction directory (/applications).
 
 
 Rikser browser is currently under deveploment 
